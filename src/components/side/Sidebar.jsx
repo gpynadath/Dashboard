@@ -19,7 +19,7 @@ const Sidebar = () => {
       <div className="top">
         <span className="logo">Geo</span>
       </div>
-      <hr></hr>
+      
       <div className="center">
         <ul>
           <p className="title">Main</p>
@@ -77,10 +77,7 @@ const Sidebar = () => {
           </li>
         </ul>
       </div>
-      <div className="bottom">
-        <div className="colorOption"></div>
-        <div className="colorOption"></div>
-      </div>
+      <div className="bottom"></div>
     </div>
   );
 };

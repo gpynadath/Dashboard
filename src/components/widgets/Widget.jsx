@@ -10,15 +10,20 @@ import React from "react";
 
 const Widget = ({ type }) => {
   let data;
-  const amount = 100;
-  const diff = 20;
+  const amount = Math.floor(Math.random() * 100);
+  const diff = Math.floor(Math.random() * 100);
   switch (type) {
     case "user":
       data = {
         title: "Users",
         isMoney: false,
         link: "See all users",
-        icon: <PersonOutline className="icon" style={{backgroundColor:"yellow"}}/>,
+        icon: (
+          <PersonOutline
+            className="icon"
+            style={{ backgroundColor: "#FFD700" }}
+          />
+        ),
       };
       break;
     case "order":
@@ -26,7 +31,9 @@ const Widget = ({ type }) => {
         title: "Orders",
         isMoney: false,
         link: "View all orders",
-        icon: <ShoppingCart className="icon" style={{backgroundColor:"blue"}}/>,
+        icon: (
+          <ShoppingCart className="icon" style={{ backgroundColor: "#7CB9E8" }} />
+        ),
       };
       break;
     case "earning":
@@ -34,7 +41,12 @@ const Widget = ({ type }) => {
         title: "Earnings",
         isMoney: true,
         link: "View net earning",
-        icon: <MonetizationOn className="icon" style={{backgroundColor:"green"}}/>,
+        icon: (
+          <MonetizationOn
+            className="icon"
+            style={{ backgroundColor: "#32de84" }}
+          />
+        ),
       };
       break;
     case "balance":
@@ -42,7 +54,9 @@ const Widget = ({ type }) => {
         title: "Balance",
         isMoney: true,
         link: "See details",
-        icon: <AccountBalance className="icon" style={{backgroundColor:"red"}}/>,
+        icon: (
+          <AccountBalance className="icon" style={{ backgroundColor: "#FF033E" }} />
+        ),
       };
   }
   return (
@@ -50,13 +64,14 @@ const Widget = ({ type }) => {
       <div className="left">
         <span className="title">{data.title}</span>
         <span className="counter">
-          {data.isMoney && "$"}{amount}
+          {data.isMoney && "$"}
+          {amount}
           {}
         </span>
         <span className="link">{data.link}</span>
       </div>
       <div className="right">
-        <div className="percentage negative">
+        <div className="percentage">
           {diff}
           <KeyboardArrowUp />
         </div>

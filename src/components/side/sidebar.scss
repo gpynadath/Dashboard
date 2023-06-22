@@ -8,17 +8,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
+    
     .logo {
-      font-size: 20px;
+      font-size: 25px;
       font-weight: bold;
-      color: blue;
+      color: black;
     }
   }
-  hr {
-    height: 0;
-    border: 0.5px solid rgb(228, 227, 227);
-  }
+  
   .center {
     padding-left: 10px;
     ul {
@@ -26,9 +23,9 @@
       margin: 0;
       padding: 0;
       .title {
-        font-size: 10px;
+        font-size: 20px;
         font-weight: bold;
-        color: #999;
+        color: #626161;
         margin-top: 15px;
         margin-bottom: 5px;
       }
@@ -38,11 +35,11 @@
         padding: 5px;
         cursor: pointer;
         &:hover {
-          background-color: rgb(177, 175, 175);
+          background-color: rgb(226 232 240)
         }
         .icon {
-          font-size: 18px;
-          color: rgb(40, 40, 246);
+          font-size: 22px;
+          color: #318CE7
         }
         span {
           font-size: 13px;

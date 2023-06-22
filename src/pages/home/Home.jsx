@@ -4,6 +4,7 @@ import Navbar from "../../components/nav/Navbar";
 import Sidebar from "../../components/side/Sidebar";
 import Table from "../../components/table/Table";
 import Widget from "../../components/widgets/Widget";
+
 import "./home.scss";
 
 const Home = () => {
